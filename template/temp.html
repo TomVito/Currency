@@ -85,18 +85,20 @@
         $(".select2").select2();
       });
 
-      const duomenys = {
+      const data = {
         datasets: [{
             label:"Rates",
             data:RatesData,
             backgroundColor: '#71B0E8',
+            lineTension: 0.5,
+            fill: 'start'
           }]
       };
 
       const config = {
-        type: "bar",
-        data: duomenys,
-        options: {}
+        type: "line",
+        data: data,
+        options: {},
       };
 
       var chart = new Chart(document.getElementById('tempChart'), config);

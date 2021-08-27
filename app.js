@@ -61,4 +61,6 @@ const server=http.createServer((req,res)=>{
     }
 });
 
-server.listen(process.env.PORT);
+// server.listen(process.env.PORT);
+
+server.listen(3000, 'localhost');
